@@ -1,0 +1,379 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v9.3.3"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2024-09-02T21:20:17.774Z",
+				"time": 252.92,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8089/api/v1/auth",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"email\": \"admin@email.com\",\n  \"senha\": \"654321\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"name": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"name": "Expires",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 02 Sep 2024 20:09:44 GMT"
+						}
+					],
+					"content": {
+						"size": 256,
+						"mimeType": "application/json;charset=UTF-8",
+						"text": "{\"data\":{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBlbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImNyZWF0ZWQiOjE3MjUzMDc3ODQ3ODMsImV4cCI6MTcyNTQwNzc4M30.nCmpB24p2NZfHU4KHHzs5u75v8XrIzEYJ5dgx33YqL8BrJBL3rf-j9MmvBduUVaKH6kd9zy_7PMwVd7Ub8MkKA\"},\"errors\":[]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 252.92,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Capturar token do administrador"
+			},
+			{
+				"startedDateTime": "2024-09-02T21:20:17.774Z",
+				"time": 111.219,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8089/api/v1/viagens",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						},
+						{
+							"name": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBlbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImNyZWF0ZWQiOjE3MjUzMDc3ODQ3ODMsImV4cCI6MTcyNTQwNzc4M30.nCmpB24p2NZfHU4KHHzs5u75v8XrIzEYJ5dgx33YqL8BrJBL3rf-j9MmvBduUVaKH6kd9zy_7PMwVd7Ub8MkKA"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"acompanhante\": \"Salazar\",\n  \"dataPartida\": \"2024-12-01\",\n  \"dataRetorno\": \"2024-12-10\",\n  \"localDeDestino\": \"Porto Alegre\",\n  \"regiao\": \"Sul\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"name": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"name": "Expires",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Location",
+							"value": "http://localhost:8089/api/v1/viagens/4"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 02 Sep 2024 20:12:20 GMT"
+						}
+					],
+					"content": {
+						"size": 155,
+						"mimeType": "application/json;charset=UTF-8",
+						"text": "{\"data\":{\"id\":4,\"localDeDestino\":\"Porto Alegre\",\"dataPartida\":\"2024-12-01\",\"dataRetorno\":\"2024-12-10\",\"acompanhante\":\"Salazar\",\"regiao\":\"Sul\"},\"errors\":[]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 111.219,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Cadastrar viagem"
+			},
+			{
+				"startedDateTime": "2024-09-02T21:20:17.774Z",
+				"time": 302.923,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8089/api/v1/auth",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"email\": \"usuario@email.com\",\n  \"senha\": \"123456\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"name": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"name": "Expires",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 02 Sep 2024 19:34:33 GMT"
+						}
+					],
+					"content": {
+						"size": 261,
+						"mimeType": "application/json;charset=UTF-8",
+						"text": "{\"data\":{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c3VhcmlvQGVtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTVUFSSU8iLCJjcmVhdGVkIjoxNzI1MzA1NjczNTI4LCJleHAiOjE3MjU0MDU2NzJ9.fRHCu4FundJDxFhsV1X0U0M7S_jEWEsocgTcS0YSI5JyXvUcoixR_Ei6gaUWLubCFbF8HjymEBttyQ2gUD4cSg\"},\"errors\":[]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 302.923,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Capturar token do usuário"
+			},
+			{
+				"startedDateTime": "2024-09-02T21:20:17.774Z",
+				"time": 19.779,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8089/api/v1/viagens",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						},
+						{
+							"name": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c3VhcmlvQGVtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTVUFSSU8iLCJjcmVhdGVkIjoxNzI1MzA1NjczNTI4LCJleHAiOjE3MjU0MDU2NzJ9.fRHCu4FundJDxFhsV1X0U0M7S_jEWEsocgTcS0YSI5JyXvUcoixR_Ei6gaUWLubCFbF8HjymEBttyQ2gUD4cSg"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"name": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"name": "Expires",
+							"value": "0"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 02 Sep 2024 20:13:15 GMT"
+						}
+					],
+					"content": {
+						"size": 551,
+						"mimeType": "application/json;charset=UTF-8",
+						"text": "{\"data\":[{\"id\":1,\"localDeDestino\":\"Pernambuco\",\"dataPartida\":\"2024-09-02\",\"dataRetorno\":\"2024-10-02\",\"acompanhante\":\"NINA\",\"regiao\":\"Norte\"},{\"id\":2,\"localDeDestino\":\"Pernambuco\",\"dataPartida\":\"2024-09-02\",\"dataRetorno\":\"2024-10-02\",\"acompanhante\":\"NINA\",\"regiao\":\"Norte\"},{\"id\":3,\"localDeDestino\":\"Maranhao\",\"dataPartida\":\"2024-11-02\",\"dataRetorno\":\"2024-12-02\",\"acompanhante\":\"NINA\",\"regiao\":\"Norte\"},{\"id\":4,\"localDeDestino\":\"Porto Alegre\",\"dataPartida\":\"2024-12-01\",\"dataRetorno\":\"2024-12-10\",\"acompanhante\":\"Salazar\",\"regiao\":\"Sul\"}],\"errors\":[]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 19.779,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar todas as viagens"
+			}
+		]
+	}
+}
